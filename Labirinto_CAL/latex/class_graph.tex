@@ -1,0 +1,83 @@
+\hypertarget{class_graph}{\section{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_graph_a37cfcb7d3c10ae10ef0bf98a7ff72ac8}{bool {\bfseries add\-Vertex} (string space, int x, int y)}\label{class_graph_a37cfcb7d3c10ae10ef0bf98a7ff72ac8}
+
+\item 
+\hypertarget{class_graph_aedea6f9bbe41b0dccc1a3b7ab1c2b9fa}{bool {\bfseries add\-Edge} (const \hyperlink{class_vertex}{Vertex} \&sourc, const \hyperlink{class_vertex}{Vertex} \&dest, double w)}\label{class_graph_aedea6f9bbe41b0dccc1a3b7ab1c2b9fa}
+
+\item 
+\hypertarget{class_graph_a58fb666730cc5d6264eabb4ae06e9556}{bool {\bfseries remove\-Vertex} (const \hyperlink{class_vertex}{Vertex} \&v)}\label{class_graph_a58fb666730cc5d6264eabb4ae06e9556}
+
+\item 
+\hypertarget{class_graph_a00c66cfb44847dd4913e18c2023899e2}{bool {\bfseries remove\-Edge} (const \hyperlink{class_vertex}{Vertex} \&sourc, const \hyperlink{class_vertex}{Vertex} \&dest)}\label{class_graph_a00c66cfb44847dd4913e18c2023899e2}
+
+\item 
+\hypertarget{class_graph_a28037aa625ed3b4697cac7c5da80bc0b}{vector$<$ \hyperlink{class_vertex}{Vertex} $\ast$ $>$ {\bfseries get\-Vertex\-Set} () const }\label{class_graph_a28037aa625ed3b4697cac7c5da80bc0b}
+
+\item 
+\hypertarget{class_graph_a74d463ee71d33c39b05602fbca6dbdbc}{int {\bfseries get\-Num\-Vertex} () const }\label{class_graph_a74d463ee71d33c39b05602fbca6dbdbc}
+
+\item 
+\hypertarget{class_graph_a8c54e3cf9367b3882f5348ee8dfb86ca}{\hyperlink{class_vertex}{Vertex} $\ast$ {\bfseries get\-Vertex} (const \hyperlink{class_vertex}{Vertex} \&v) const }\label{class_graph_a8c54e3cf9367b3882f5348ee8dfb86ca}
+
+\item 
+\hypertarget{class_graph_a3bf23feb5d45968cd33b4bc6308c2919}{\hyperlink{class_vertex}{Vertex} $\ast$ {\bfseries get\-Vertex} (int x, int y) const }\label{class_graph_a3bf23feb5d45968cd33b4bc6308c2919}
+
+\item 
+\hypertarget{class_graph_a9793b4f564d1299978495e8cf60f1819}{int {\bfseries get\-Vertexindex} (int x, int y) const }\label{class_graph_a9793b4f564d1299978495e8cf60f1819}
+
+\item 
+\hypertarget{class_graph_a828e8c09c9a03c05c79cb662f569ac40}{void {\bfseries set\-Vertex\-Color} (int x, int y, string Color) const }\label{class_graph_a828e8c09c9a03c05c79cb662f569ac40}
+
+\item 
+\hypertarget{class_graph_a6a203671edfb18e3e2cb0f7ec1f7b94e}{\hyperlink{class_vertex}{Vertex} $\ast$ {\bfseries get\-Vertex} (int i) const }\label{class_graph_a6a203671edfb18e3e2cb0f7ec1f7b94e}
+
+\item 
+\hypertarget{class_graph_ac1ee8cd3b632d6e3fafa5b06bf114ace}{vector$<$ \hyperlink{class_vertex}{Vertex} $\ast$ $>$ {\bfseries get\-Sources} () const }\label{class_graph_ac1ee8cd3b632d6e3fafa5b06bf114ace}
+
+\item 
+\hypertarget{class_graph_a8e6e291219a8bcf6317535d51e51de3e}{int {\bfseries get\-Vertex\-Id} (int x, int y) const }\label{class_graph_a8e6e291219a8bcf6317535d51e51de3e}
+
+\item 
+\hypertarget{class_graph_a2b5e91399101a54f66fa97a6deb8b646}{vector$<$ \hyperlink{class_vertex}{Vertex} $\ast$ $>$ {\bfseries Shortest\-Path} (\hyperlink{class_vertex}{Vertex} $\ast$source, \hyperlink{class_vertex}{Vertex} $\ast$dest)}\label{class_graph_a2b5e91399101a54f66fa97a6deb8b646}
+
+\item 
+\hypertarget{class_graph_aa9ea45f6677b8fc9b1db67235a827d2e}{vector$<$ \hyperlink{class_vertex}{Vertex} $\ast$ $>$ {\bfseries Shortest\-Path\-Dragon} (\hyperlink{class_vertex}{Vertex} $\ast$source)}\label{class_graph_aa9ea45f6677b8fc9b1db67235a827d2e}
+
+\item 
+\hypertarget{class_graph_a67d3a467d2e65a3aa72462509fcd7a25}{vector$<$ \hyperlink{class_vertex}{Vertex} $\ast$ $>$ {\bfseries get\-Path} (\hyperlink{class_vertex}{Vertex} $\ast$source, \hyperlink{class_vertex}{Vertex} $\ast$dest)}\label{class_graph_a67d3a467d2e65a3aa72462509fcd7a25}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_graph_ae0036365e4e2e14437c0dfbb71128416}{int {\bfseries hero\-X}}\label{class_graph_ae0036365e4e2e14437c0dfbb71128416}
+
+\item 
+\hypertarget{class_graph_a1182e54407da7f880bc6063aa0359294}{int {\bfseries hero\-Y}}\label{class_graph_a1182e54407da7f880bc6063aa0359294}
+
+\item 
+\hypertarget{class_graph_a945e7e47257752cd727084301faa2eea}{int {\bfseries exit\-X}}\label{class_graph_a945e7e47257752cd727084301faa2eea}
+
+\item 
+\hypertarget{class_graph_aca031817228c0ca61535acb192c9d30d}{int {\bfseries exit\-Y}}\label{class_graph_aca031817228c0ca61535acb192c9d30d}
+
+\item 
+\hypertarget{class_graph_ab14eb21364b7ce0619846da016679daf}{int {\bfseries sword\-X}}\label{class_graph_ab14eb21364b7ce0619846da016679daf}
+
+\item 
+\hypertarget{class_graph_ad409e5ac58a042fe71dd425025feb4c6}{int {\bfseries sword\-Y}}\label{class_graph_ad409e5ac58a042fe71dd425025feb4c6}
+
+\item 
+\hypertarget{class_graph_acc1c33526fcabe10dba0cb02d7f64a9a}{int {\bfseries nod}}\label{class_graph_acc1c33526fcabe10dba0cb02d7f64a9a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Graph.\-h\end{DoxyCompactItemize}

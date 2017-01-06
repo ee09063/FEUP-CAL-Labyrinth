@@ -1,0 +1,360 @@
+\hypertarget{class_graph_viewer}{\section{Graph\-Viewer Class Reference}
+\label{class_graph_viewer}\index{Graph\-Viewer@{Graph\-Viewer}}
+}
+
+
+{\ttfamily \#include $<$graphviewer.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graph_viewer_aefca44052e0000ef416ddafc828f36cc}{Graph\-Viewer} (int width, int height, bool port\-\_\-n)
+\item 
+\hyperlink{class_graph_viewer_ad9d7b1d8b4ba8ef18517eae0e68568a2}{Graph\-Viewer} (int width, int height, bool dynamic, int port\-\_\-n)
+\item 
+bool \hyperlink{class_graph_viewer_ae5247dc66449dcd21fc5d531bbbaddfa}{create\-Window} (int width, int height)
+\item 
+bool \hyperlink{class_graph_viewer_a85990c1eaac7feed3950960d4bd2fd4c}{close\-Window} ()
+\item 
+bool \hyperlink{class_graph_viewer_a5421e86ac76433876309236ba96e70a2}{add\-Node} (int id, int x, int y)
+\item 
+bool \hyperlink{class_graph_viewer_ab9be856eb5f45284719a3bb119ec01ea}{add\-Node} (int id)
+\item 
+bool \hyperlink{class_graph_viewer_aad0c1448c37f744209ffb671f1bd0015}{add\-Edge} (int id, int v1, int v2, int edge\-Type)
+\item 
+bool \hyperlink{class_graph_viewer_a0c418639bb911eb827cabf895915f775}{remove\-Node} (int id)
+\item 
+bool \hyperlink{class_graph_viewer_a9a8ee68c7c12b373affbe4069dd95d72}{remove\-Edge} (int id)
+\item 
+bool \hyperlink{class_graph_viewer_ac25d7d007022fda16799808ba136e909}{set\-Vertex\-Label} (int id, string label)
+\item 
+bool \hyperlink{class_graph_viewer_a447cca0064e785654c2105602c2961ca}{set\-Edge\-Label} (int id, string label)
+\item 
+bool \hyperlink{class_graph_viewer_a07ccc96707efae4aa5f3ced3dca015af}{set\-Edge\-Color} (int id, string color)
+\item 
+bool \hyperlink{class_graph_viewer_a8b542d7e09e81a45a74760c19233beb0}{set\-Vertex\-Color} (int id, string color)
+\item 
+bool \hyperlink{class_graph_viewer_a4102580b69826ba83251ef7bb262f8be}{define\-Edge\-Color} (string color)
+\item 
+bool \hyperlink{class_graph_viewer_a76de8676b7a93d72af514b84cdaa4d21}{define\-Vertex\-Color} (string color)
+\item 
+bool \hyperlink{class_graph_viewer_a07f598272fe3515455eab13be749604a}{set\-Edge\-Thickness} (int id, int thickness)
+\item 
+bool \hyperlink{class_graph_viewer_a02437b5fecd8b90de24436068312d593}{set\-Background} (string path)
+\item 
+bool \hyperlink{class_graph_viewer_ac211de009a0afe2e6d44f4f8d030a2cc}{set\-Edge\-Weight} (int id, int weight)
+\item 
+bool \hyperlink{class_graph_viewer_a69eb065145063e4dea41961e92e35c8e}{set\-Edge\-Flow} (int id, int flow)
+\item 
+bool \hyperlink{class_graph_viewer_a3009a66958686ccb7e78b68e37c3c423}{rearrange} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static short \hyperlink{class_graph_viewer_a89d0abe75f41feededc49497cc514342}{port} = 7772
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que guarda o grafo e o representa. Todas as suas funções retornam um booleano a indicar se a sua execução decorreu ou não com sucesso. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_graph_viewer_aefca44052e0000ef416ddafc828f36cc}{\index{Graph\-Viewer@{Graph\-Viewer}!Graph\-Viewer@{Graph\-Viewer}}
+\index{Graph\-Viewer@{Graph\-Viewer}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{Graph\-Viewer}]{\setlength{\rightskip}{0pt plus 5cm}Graph\-Viewer\-::\-Graph\-Viewer (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{bool}]{port\-\_\-n}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_aefca44052e0000ef416ddafc828f36cc}
+Construtor que cria um novo grafo e atribui automaticamente a porta. 
+\begin{DoxyParams}{Parameters}
+{\em width} & Inteiro que representa a lagura da área do grafo. \\
+\hline
+{\em height} & Inteiro que representa a altura da área do grafo. \\
+\hline
+{\em dynamic} & Booleano que determina se a localização dos nós é automaticamente. determinado pelo programa (true) ou se deve ser determinado pelo utilizador (false). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_ad9d7b1d8b4ba8ef18517eae0e68568a2}{\index{Graph\-Viewer@{Graph\-Viewer}!Graph\-Viewer@{Graph\-Viewer}}
+\index{Graph\-Viewer@{Graph\-Viewer}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{Graph\-Viewer}]{\setlength{\rightskip}{0pt plus 5cm}Graph\-Viewer\-::\-Graph\-Viewer (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{bool}]{dynamic, }
+\item[{int}]{port\-\_\-n}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_ad9d7b1d8b4ba8ef18517eae0e68568a2}
+Construtor que cria um novo grafo, utilizando uma porta especificada pelo utilizador para a ligação. 
+\begin{DoxyParams}{Parameters}
+{\em width} & Inteiro que representa a lagura da área do grafo. \\
+\hline
+{\em height} & Inteiro que representa a altura da área do grafo. \\
+\hline
+{\em dynamic} & Booleano que determina se a localização dos nós é automaticamente. determinado pelo programa (true) ou se deve ser determinado pelo utilizador (false). \\
+\hline
+{\em port\-\_\-n} & Inteiro que determina a porta a utilizar. Deve-\/se ter cuidado para não utilizar uma porta já usada por outro programa ou pelo sistema. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graph_viewer_aad0c1448c37f744209ffb671f1bd0015}{\index{Graph\-Viewer@{Graph\-Viewer}!add\-Edge@{add\-Edge}}
+\index{add\-Edge@{add\-Edge}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{add\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::add\-Edge (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{v1, }
+\item[{int}]{v2, }
+\item[{int}]{edge\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_aad0c1448c37f744209ffb671f1bd0015}
+Acrescenta uma aresta à representação do grafo. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único da aresta. \\
+\hline
+{\em v1} & Identificador único do nó de origem da aresta. \\
+\hline
+{\em v2} & Identificador único do nó de destino da aresta. \\
+\hline
+{\em edge\-Type} & Edge\-Type.\-D\-I\-R\-E\-C\-T\-E\-D caso a aresta seja unidirecional ou Edge\-Type.\-U\-N\-D\-I\-R\-E\-C\-T\-E\-D caso a aresta seja bidirecional. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a5421e86ac76433876309236ba96e70a2}{\index{Graph\-Viewer@{Graph\-Viewer}!add\-Node@{add\-Node}}
+\index{add\-Node@{add\-Node}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{add\-Node}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::add\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a5421e86ac76433876309236ba96e70a2}
+Acrescenta um nó à representação do grafo, numa posição específica, irrelevante se o grafo for dinâmico. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único do nó. \\
+\hline
+{\em x} & Posição horizontal do nó. \\
+\hline
+{\em y} & Posição vertical do nó. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_ab9be856eb5f45284719a3bb119ec01ea}{\index{Graph\-Viewer@{Graph\-Viewer}!add\-Node@{add\-Node}}
+\index{add\-Node@{add\-Node}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{add\-Node}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::add\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_ab9be856eb5f45284719a3bb119ec01ea}
+Acrescenta um nó à representação do grafo, numa posição ao critério do programa. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único do nó. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a85990c1eaac7feed3950960d4bd2fd4c}{\index{Graph\-Viewer@{Graph\-Viewer}!close\-Window@{close\-Window}}
+\index{close\-Window@{close\-Window}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{close\-Window}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::close\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a85990c1eaac7feed3950960d4bd2fd4c}
+Fecha a janela a ser utilizada para visualização. \hypertarget{class_graph_viewer_ae5247dc66449dcd21fc5d531bbbaddfa}{\index{Graph\-Viewer@{Graph\-Viewer}!create\-Window@{create\-Window}}
+\index{create\-Window@{create\-Window}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{create\-Window}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::create\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_ae5247dc66449dcd21fc5d531bbbaddfa}
+Função que cria a janela para visualização. 
+\begin{DoxyParams}{Parameters}
+{\em width} & Largura da janela a criar. \\
+\hline
+{\em height} & Altura da janela a criar. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a4102580b69826ba83251ef7bb262f8be}{\index{Graph\-Viewer@{Graph\-Viewer}!define\-Edge\-Color@{define\-Edge\-Color}}
+\index{define\-Edge\-Color@{define\-Edge\-Color}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{define\-Edge\-Color}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::define\-Edge\-Color (
+\begin{DoxyParamCaption}
+\item[{string}]{color}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a4102580b69826ba83251ef7bb262f8be}
+Função que define a cor global das arestas. 
+\begin{DoxyParams}{Parameters}
+{\em color} & Nova cor das arestas, utilizar as constantes definidas no \hyperlink{graphviewer_8h_source}{graphviewer.\-h} para conveniência. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a76de8676b7a93d72af514b84cdaa4d21}{\index{Graph\-Viewer@{Graph\-Viewer}!define\-Vertex\-Color@{define\-Vertex\-Color}}
+\index{define\-Vertex\-Color@{define\-Vertex\-Color}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{define\-Vertex\-Color}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::define\-Vertex\-Color (
+\begin{DoxyParamCaption}
+\item[{string}]{color}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a76de8676b7a93d72af514b84cdaa4d21}
+Função que define a cor global dos nós. 
+\begin{DoxyParams}{Parameters}
+{\em color} & Nova cor dos nós, utilizar as constantes definidas no \hyperlink{graphviewer_8h_source}{graphviewer.\-h} para conveniência. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a3009a66958686ccb7e78b68e37c3c423}{\index{Graph\-Viewer@{Graph\-Viewer}!rearrange@{rearrange}}
+\index{rearrange@{rearrange}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{rearrange}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::rearrange (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a3009a66958686ccb7e78b68e37c3c423}
+Função que actualiza a visualização do grafo. \hypertarget{class_graph_viewer_a9a8ee68c7c12b373affbe4069dd95d72}{\index{Graph\-Viewer@{Graph\-Viewer}!remove\-Edge@{remove\-Edge}}
+\index{remove\-Edge@{remove\-Edge}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{remove\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::remove\-Edge (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a9a8ee68c7c12b373affbe4069dd95d72}
+Remove uma aresta da representação do grafo. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único da aresta a remover. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a0c418639bb911eb827cabf895915f775}{\index{Graph\-Viewer@{Graph\-Viewer}!remove\-Node@{remove\-Node}}
+\index{remove\-Node@{remove\-Node}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{remove\-Node}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::remove\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a0c418639bb911eb827cabf895915f775}
+Remove um nó da representação do grafo e todas as arestas ligadas a este. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único do nó a a remover. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a02437b5fecd8b90de24436068312d593}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Background@{set\-Background}}
+\index{set\-Background@{set\-Background}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Background}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Background (
+\begin{DoxyParamCaption}
+\item[{string}]{path}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a02437b5fecd8b90de24436068312d593}
+Função que altera a imagem de fundo do grafo. 
+\begin{DoxyParams}{Parameters}
+{\em path} & Caminho para o ficheiro com a imagem. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a07ccc96707efae4aa5f3ced3dca015af}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Edge\-Color@{set\-Edge\-Color}}
+\index{set\-Edge\-Color@{set\-Edge\-Color}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Edge\-Color}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Edge\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{color}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a07ccc96707efae4aa5f3ced3dca015af}
+Função que define a cor de uma aresta. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único da aresta com a cor a alterar. \\
+\hline
+{\em color} & Nova cor da aresta, utilizar as constantes definidas no \hyperlink{graphviewer_8h_source}{graphviewer.\-h} para conveniência. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a69eb065145063e4dea41961e92e35c8e}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Edge\-Flow@{set\-Edge\-Flow}}
+\index{set\-Edge\-Flow@{set\-Edge\-Flow}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Edge\-Flow}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Edge\-Flow (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{flow}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a69eb065145063e4dea41961e92e35c8e}
+Função que define o fluxo de uma aresta na representação do grafo, a ser visualizado como f\-: valor\-\_\-do\-\_\-fluxo, precedido pelo peso e seguido por texto definido pelo utilizador. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único da aresta a modificar. \\
+\hline
+{\em flow} & Fluxo associado à aresta. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a447cca0064e785654c2105602c2961ca}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Edge\-Label@{set\-Edge\-Label}}
+\index{set\-Edge\-Label@{set\-Edge\-Label}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Edge\-Label}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Edge\-Label (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{label}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a447cca0064e785654c2105602c2961ca}
+Função que define o texto de uma aresta. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único da aresta com o texto a alterar. \\
+\hline
+{\em label} & Novo texto da aresta. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a07f598272fe3515455eab13be749604a}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Edge\-Thickness@{set\-Edge\-Thickness}}
+\index{set\-Edge\-Thickness@{set\-Edge\-Thickness}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Edge\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Edge\-Thickness (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{thickness}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a07f598272fe3515455eab13be749604a}
+Função que define a espessura de uma aresta. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único da aresta com a espessura a alterar. \\
+\hline
+{\em thickness} & Nova espessura da aresta, sendo que por base, as arestas são criadas com a espessura de 1. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_ac211de009a0afe2e6d44f4f8d030a2cc}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Edge\-Weight@{set\-Edge\-Weight}}
+\index{set\-Edge\-Weight@{set\-Edge\-Weight}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Edge\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Edge\-Weight (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{weight}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_ac211de009a0afe2e6d44f4f8d030a2cc}
+Função que define o peso de uma aresta na representação do grafo, a ser visualizado como w\-: valor\-\_\-do\-\_\-peso, seguido de qualquer outro texto associado à aresta. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único da aresta a modificar. \\
+\hline
+{\em weight} & Peso associado à aresta. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_a8b542d7e09e81a45a74760c19233beb0}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Vertex\-Color@{set\-Vertex\-Color}}
+\index{set\-Vertex\-Color@{set\-Vertex\-Color}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Vertex\-Color}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Vertex\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{color}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_a8b542d7e09e81a45a74760c19233beb0}
+Função que define a cor de um nó. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único do nó com a cor a alterar. \\
+\hline
+{\em color} & Nova cor do nó, utilizar as constantes definidas no \hyperlink{graphviewer_8h_source}{graphviewer.\-h} para conveniência. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graph_viewer_ac25d7d007022fda16799808ba136e909}{\index{Graph\-Viewer@{Graph\-Viewer}!set\-Vertex\-Label@{set\-Vertex\-Label}}
+\index{set\-Vertex\-Label@{set\-Vertex\-Label}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{set\-Vertex\-Label}]{\setlength{\rightskip}{0pt plus 5cm}bool Graph\-Viewer\-::set\-Vertex\-Label (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{label}
+\end{DoxyParamCaption}
+)}}\label{class_graph_viewer_ac25d7d007022fda16799808ba136e909}
+Função que define o texto de um nó. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único do nó com o texto a alterar. \\
+\hline
+{\em label} & Novo texto do nó. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_graph_viewer_a89d0abe75f41feededc49497cc514342}{\index{Graph\-Viewer@{Graph\-Viewer}!port@{port}}
+\index{port@{port}!GraphViewer@{Graph\-Viewer}}
+\subsubsection[{port}]{\setlength{\rightskip}{0pt plus 5cm}short Graph\-Viewer\-::port = 7772\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_viewer_a89d0abe75f41feededc49497cc514342}
+Variável que guarda a próxima porta que o programa vai usar. O valor inicial é 7772. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+graphviewer.\-h\item 
+graphviewer.\-cpp\end{DoxyCompactItemize}

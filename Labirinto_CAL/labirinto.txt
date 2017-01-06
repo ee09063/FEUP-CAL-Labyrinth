@@ -1,0 +1,7 @@
+D;X;X;X;X;N;N;E;
+N;X;X;N;X;N;X;N;
+N;N;N;N;N;N;N;N;
+X;X;X;N;X;X;X;N;
+D;N;N;N;N;N;N;N;
+X;X;X;X;X;H;X;N;
+X;X;X;X;X;N;X;S;
